@@ -12,7 +12,7 @@ public class ErrorValidationsTest extends BaseTest
     public void submitOrder() throws IOException
     {
         String productName = "ZARA COAT 3";
-        ProductCatalogue productCatalogue = landingPage.loginApplication("anshika@gmail.co", "Iamki@000");
+        ProductCatalogue productCatalogue = landingPage.loginApplication("anshika@gmail.com", "Iamki@000");
         Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
     }
 }
